@@ -39,4 +39,26 @@ class Auto {
 		System.out.println("Malli: " + malli);
 		System.out.println("Tankissa bensaa: " + bensanMaara);
 	}
+	
+	
+	
+	public void jarruta()
+	{
+		System.out.println("Auto jarruttaa.");
+	}
+	
+	
+	
+	public void kiihdyta()
+	{
+		if (bensanMaara == 0)
+		{
+		System.out.println("Bensa loppu, tankkaa auto");
+		}
+		else {
+		
+		System.out.println("Auto kiihtyy.");
+		bensanMaara = (bensanMaara -1);
+		}
+	}
 }
