@@ -3,7 +3,14 @@ public class GitTehtava1 {
 
 	public static void main(String[] args) {
 
-
+		Auto auto1 = new Auto();
+		Auto auto2 = new Auto("Fiat", "Ducato");
+		
+		auto1.naytaTiedot();
+		auto2.naytaTiedot();
+		auto2.kiihdyta();
+		auto2.tankkaus=1;
+		auto2.tankkaa();
 
 		
 	}
