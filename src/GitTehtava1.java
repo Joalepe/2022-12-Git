@@ -17,6 +17,8 @@ class Auto {
 	
 	public int bensanMaara;
 	
+	public int tankkaus;
+	
 	public Auto()
 	{
 		merkki="";
@@ -61,4 +63,14 @@ class Auto {
 		bensanMaara = (bensanMaara -1);
 		}
 	}
+	
+	
+	public void tankkaa()
+	{
+		System.out.println("Tankissa bensaa: " + bensanMaara);
+		System.out.println("Tankkaus: " + tankkaus);
+		System.out.println("Tankissa bensaa tankkauksen jälkeen: " + (bensanMaara+tankkaus));
+		bensanMaara = (bensanMaara + tankkaus);
+	}
+	
 }
